@@ -25,24 +25,27 @@ public class PTra06_07 {
 		 * ■□□□□
 		 */
 		for(int i = 0; i < 10; i++) {
-			for(int j = 0; j < 5; j++) {
 				//iが5までの処理
 				if(i <= 5) {
-					if(j < i) {
-						System.out.print("■");
-					} else {
-						System.out.print("□");
+					for(int j = 0; j < 5; j++) {
+						if(j < i) {
+							System.out.print("■");
+						} else {
+							System.out.print("□");
+						}
 					}
 				//iが5より大きいときの処理
 				} else if(i > 5) {
-					if(j < 10 - i) {
-						System.out.print("■");
-					} else {
-						System.out.print("□");
+					for(int j = 0; j < 5; j++) {
+						if(j < 10 - i) {
+							System.out.print("■");
+						} else {
+							System.out.print("□");
+						}
 					}
 				}
-			}
-			System.out.println("");
+				System.out.println("");
 		}
 	}
 }
+
