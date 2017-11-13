@@ -36,5 +36,22 @@ public class PTra03_08 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		final int ORANGE = 150;
+		final int APPLE = 160;
+		final int COFFEE = 200;
+
+		switch(num) {
+			case 1:
+				System.out.println(money - ORANGE);
+				break;
+			case 2:
+				System.out.println(money - APPLE);
+				break;
+			case 3:
+				System.out.println(money - COFFEE);
+				break;
+			default:
+				System.out.println("1から3までの数値を入れて下さい。");
+		}
 	}
 }

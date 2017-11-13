@@ -22,5 +22,11 @@ public class PTra02_10 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		final double TAX = 1.08;
+		int nonTaxedPrice = coffee * 2 + snack;
+		double taxedPrice = nonTaxedPrice * TAX;
+		moneyInHand -= (int)taxedPrice;
+
+		System.out.println(moneyInHand);
 	}
 }

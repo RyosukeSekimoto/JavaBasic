@@ -30,7 +30,17 @@ public class PTra03_07 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+		switch(num){
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+				System.out.println(num);
+				break;
+			default:
+				System.out.println("選択したのは,1～5以外です");
+		}
 
 	}
 }
