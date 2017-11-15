@@ -1,4 +1,5 @@
 package practice10;
+
 /*
  * PTra10_05.java
  *   作成	LIKEIT	2017
@@ -27,26 +28,48 @@ public class PTra10_05 {
 
 		// Carクラスを作成後に着手してください
 		// ★ Car型の変数carを宣言し、Carクラスのインスタンスを代入してください
-
+		Car car = new Car();
 
 		// ★ 変数carに格納されているインスタンスのserialNoフィールドに、10000を代入してください
-
+		car.serialNo = 10000;
 
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
-
+		car.color = "red";
 
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
-
+		car.gasoline = 50;
 
 		// 目的地までの距離
-		final int distance = 300;
-
+		final int distance = 30000;
+		// 経過時間
+		int hour = 0;
+		// 移動距離
+		int dist = 0;
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
 		 * ★ 先にガソリンがなくなった場合は、「目的地に到達できませんでした」を出力してください
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
+		while(true) {
+			//時間経過
+			hour++;
+			//runメソッド実行
+			int result = car.run();
+			//ガソリンが残っているとき
+			if(result == 1) {
+				dist += new java.util.Random().nextInt(15) + 1;
+				if(dist > distance) {
+					System.out.println("目的地にまで" + hour + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
+					break;
+				}
+			//ガソリンが無くなったとき
+			} else if(result == -1) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
+		}
 
-	}
 }
+}
+
