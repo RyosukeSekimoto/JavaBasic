@@ -23,13 +23,6 @@ public class Book {
 	 * @param pageSize	ページ数
 	 * @param publication	出版社
 	 */
-	Book(String title, String author, int price, int pageSize, String publication) {
-		this.title = title;
-		this.author = author;
-		this.price = price;
-		this.pageSize = pageSize;
-		this.publication = publication;
-	}
 
 	/** 本のタイトル */
 	String title;
@@ -45,6 +38,15 @@ public class Book {
 
 	/** 出版社 */
 	String publication;
+
+	//コンストラクタ
+	Book(String title, String author, int price, int pageSize, String publication) {
+		this.title = title;
+		this.author = author;
+		this.price = price;
+		this.pageSize = pageSize;
+		this.publication = publication;
+	}
 
 	/**
 	 * 本の情報を文字列で取得します

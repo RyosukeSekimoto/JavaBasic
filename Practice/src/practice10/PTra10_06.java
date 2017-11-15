@@ -45,13 +45,13 @@ public class PTra10_06 {
 			System.out.println("");
 		}
 
-		//目的地へと進むコード
+		//３つの車が目的地へと進むコード
 		for(int i = 0; i < cars.length; i++) {
 
 			// 経過時間の初期化
 			int hour = 0;
 			// 移動距離の初期化
-			int dist = 0;
+			int advance = 0;
 
 			//目的地に到着もしくはガソリンが無くなるまで繰り返す
 			while(true) {
@@ -61,8 +61,8 @@ public class PTra10_06 {
 				int result = cars[i].run();
 				//ガソリンが残っているとき実行
 				if(result == 1) {
-					dist += new java.util.Random().nextInt(15) + 1;
-					if(dist > distance) {
+					advance += new java.util.Random().nextInt(15) + 1;
+					if(advance > distance) {
 						System.out.println((i + 1) + "台目の結果");
 						System.out.println("目的地にまで" + hour + "時間かかりました。残りのガソリンは、" + cars[i].gasoline + "リットルです");
 						System.out.println("");

@@ -44,7 +44,7 @@ public class PTra10_05 {
 		// 経過時間
 		int hour = 0;
 		// 移動距離
-		int dist = 0;
+		int advance = 0;
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
 		 * ★ 先にガソリンがなくなった場合は、「目的地に到達できませんでした」を出力してください
@@ -58,8 +58,8 @@ public class PTra10_05 {
 			int result = car.run();
 			//ガソリンが残っているとき
 			if(result == 1) {
-				dist += new java.util.Random().nextInt(15) + 1;
-				if(dist > distance) {
+				advance += new java.util.Random().nextInt(15) + 1;
+				if(advance > distance) {
 					System.out.println("目的地にまで" + hour + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
 					break;
 				}
