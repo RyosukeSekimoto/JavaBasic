@@ -16,13 +16,12 @@ public class PTra11_03 {
 	 * ★ 処理は、クラスフィールドnumberに1を加算してください
 	 */
 	PTra11_03() {
-		this.number++;
+		PTra11_03.number++;
 	}
 
 	public static void main(String[] args) {
-
-		PTra11_03 ptra11_03 = new PTra11_03();
 		// ★ sumメソッドを呼び出してください
+		PTra11_03 ptra11_03 = new PTra11_03();
 		ptra11_03.sum(20, 20);
 
 	}
