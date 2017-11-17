@@ -8,7 +8,7 @@ package practice15.common;
 
 import java.util.Date;
 
-public class Room {
+public abstract class Room {
 	/** 教室名 */
 	private String className;
 	/** 担当講師 */
@@ -58,4 +58,7 @@ public class Room {
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
+
+	//カリキュラムを抽象メソッドで設定
+	public abstract String[] getCurriculum();
 }
