@@ -9,6 +9,7 @@ package practice18;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import practice18.entity.Player;
@@ -59,12 +60,22 @@ public class PTra18_03 {
             System.out.println("ファイルが見つかりません");
         }
 
-
 		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
+		String str1 = "レアル・マドリード";
+		String str2 = "バルセロナ";
 
+        for(Iterator<Player> i = playersList.iterator(); i.hasNext();){
+            String str = i.next().getTeam();
+            // "レアル・マドリード"または"バルセロナ"なら除外
+            if(str.equals(str1) || str.equals(str2)){
+                i.remove();
+            }
+        }
 
 		// ★ 削除後のArrayListの中身を全件出力してください
-
+		for(Player player: playersList) {
+			System.out.println(player.toString());
+		}
 
 	}
 }
