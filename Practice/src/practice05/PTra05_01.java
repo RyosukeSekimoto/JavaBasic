@@ -10,7 +10,7 @@ public class PTra05_01 {
 	public static void main(String[] args) {
 
 		// ★ int型の変数numを宣言し、5で初期化してください
-		int num = 3;
+		int num = 5;
 
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください

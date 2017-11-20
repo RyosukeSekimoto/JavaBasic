@@ -25,7 +25,7 @@ public class PTra05_04 {
 		// ①
 		boolean Flg = true;
 
-		while(true) {
+		while(Flg) {
 			System.out.println("0～6の整数を入力してください");
 
 			String line = scanner.nextLine();
@@ -59,8 +59,6 @@ public class PTra05_04 {
 					System.out.println("土曜");
 					Flg = false;
 					break;
-				default:
-					continue;
 			}
 		}
 	}
