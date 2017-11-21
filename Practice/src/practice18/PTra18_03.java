@@ -27,10 +27,13 @@ public class PTra18_03 {
 		 * ★ file/BestElevenCandidate.csvの内容を取得し、１行毎にPlayerインスタンスに情報を格納してください
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
+
 		//csvファイルに含まれている選手ごとデータの数
 		int index = 0;
+
 		//選手ごとのデータ（1行分）を格納する配列を用意
 		String[] fileRow = new String[65536];
+
 		//Playerインスタンスを格納するArrayListを用意
 		ArrayList<Player> playersList = new ArrayList<Player>();
 
@@ -64,11 +67,12 @@ public class PTra18_03 {
 		String str1 = "レアル・マドリード";
 		String str2 = "バルセロナ";
 
-        for(Iterator<Player> i = playersList.iterator(); i.hasNext();){
-            String str = i.next().getTeam();
+        for(Iterator<Player> it = playersList.iterator(); it.hasNext();){
+            Player p = it.next();
+            String str = p.getTeam();
             // "レアル・マドリード"または"バルセロナ"なら除外
             if(str.equals(str1) || str.equals(str2)){
-                i.remove();
+                it.remove();
             }
         }
 

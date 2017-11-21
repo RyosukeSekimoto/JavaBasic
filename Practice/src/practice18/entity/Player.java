@@ -1,11 +1,14 @@
 package practice18.entity;
 
 public class Player {
+
+
 	//フィールド
 	String position;
 	String name;
 	String country;
 	String team;
+
 
 	//コンストラクタ
 	public Player(String position, String name, String country, String team) {
@@ -14,6 +17,7 @@ public class Player {
 		this.country = country;
 		this.team = team;
 	}
+
 
 	//getterメソッド
 	public String getPosition() {
@@ -29,6 +33,7 @@ public class Player {
 		return this.team;
 	}
 
+
 	//setterメソッド
 	public void setPosition(String position) {
 		this.position = position;
@@ -42,6 +47,7 @@ public class Player {
 	public void setTeam(String team) {
 		this.team = team;
 	}
+
 
 	//toStringメソッドのオーバーライド
 	public String toString() {

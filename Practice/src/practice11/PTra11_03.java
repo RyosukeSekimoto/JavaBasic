@@ -20,13 +20,13 @@ public class PTra11_03 {
 	}
 
 	public static void main(String[] args) {
+
 		// ★ sumメソッドを呼び出してください
-		PTra11_03 ptra11_03 = new PTra11_03();
-		ptra11_03.sum(20, 20);
+		sum(20, 20);
 
 	}
 
-	public void sum(int x, int y) {
+	public static void sum(int x, int y) {
 
 		System.out.println("sumメソッドを呼び出しました。" + x + "＋" + y + "＝" + (x + y));
 
