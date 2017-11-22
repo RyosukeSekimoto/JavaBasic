@@ -80,14 +80,11 @@ public class PTra18_04 {
 
             if(str.equals("GK")) {
             	GK_List.add(p);
-            }
-            if(str.equals("DF")) {
+            }else if(str.equals("DF")){
             	DF_List.add(p);
-            }
-            if(str.equals("MF")) {
+            }else if(str.equals("MF")){
             	MF_List.add(p);
-            }
-            if(str.equals("FW")) {
+            }else if(str.equals("FW")){
             	FW_List.add(p);
             }
 		}
@@ -100,22 +97,22 @@ public class PTra18_04 {
 
 		//選手を出力
 		System.out.println("GK1名");
-		System.out.println(GK_List.get(0).toString());
+		playerPrintln(GK_List, 1);
 
 		System.out.println("DF4名");
-		for(int i = 0; i < 4; i++) {
-			System.out.println(DF_List.get(i).toString());
-		}
+		playerPrintln(DF_List, 4);
 
 		System.out.println("MF4名");
-		for(int i = 0; i < 4; i++) {
-			System.out.println(MF_List.get(i).toString());
-		}
+		playerPrintln(MF_List, 4);
 
 		System.out.println("FW2名");
-		for(int i = 0; i < 2; i++) {
-			System.out.println(FW_List.get(i).toString());
-		}
+		playerPrintln(FW_List, 2);
+	}
 
+	//選手出力メソッド
+	public static void playerPrintln(ArrayList<Player> list, int num) {
+		for(int i = 0; i < num; i++) {
+			System.out.println(list.get(i).toString());
+		}
 	}
 }
