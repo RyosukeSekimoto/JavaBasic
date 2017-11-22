@@ -13,8 +13,8 @@ package practice13.common;
 public class Employee extends Person{
 
 	//フィールド
-	String depertmentNm;
-	int departmentCnt;
+	private String depertmentNm;
+	private int departmentCnt;
 
 	//アクセサ
 

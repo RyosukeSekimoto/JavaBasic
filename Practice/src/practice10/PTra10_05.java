@@ -40,7 +40,7 @@ public class PTra10_05 {
 		car.gasoline = 50;
 
 		// 目的地までの距離
-		final int distance = 30000;
+		final int distance = 300;
 		// 経過時間
 		int hour = 0;
 		// 移動距離

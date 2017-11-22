@@ -23,7 +23,7 @@ public class PTra02_10 {
 		 */
 
 		final double TAX = 1.08;
-		int nonTaxedPrice = coffee * 2 + snack;
+		int nonTaxedPrice = (coffee * 2) + snack;
 		double taxedPrice = nonTaxedPrice * TAX;
 		moneyInHand -= (int)taxedPrice;
 

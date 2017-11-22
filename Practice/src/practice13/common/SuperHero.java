@@ -21,7 +21,7 @@ public class SuperHero extends Hero {
 	}
 
 	//フィールド
-	Item equipment;
+	private Item equipment;
 
 	//メソッド
 	public int attack() {

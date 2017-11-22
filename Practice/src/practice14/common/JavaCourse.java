@@ -3,7 +3,7 @@ package practice14.common;
 public class JavaCourse implements Course{
 
 	public String getCourseName() {
-		return  "Java";
+		return PREFIX + "Java";
 	}
 
 	public String[] getCourseUnit() {

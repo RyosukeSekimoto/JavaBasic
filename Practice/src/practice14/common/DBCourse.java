@@ -3,7 +3,7 @@ package practice14.common;
 public class DBCourse implements Course {
 
 	public String getCourseName() {
-		return "DB基礎";
+		return PREFIX + "DB基礎";
 	}
 
 	public String[] getCourseUnit() {
